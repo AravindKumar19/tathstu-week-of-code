@@ -1,0 +1,3 @@
+number=float(input("Enter a Number"))
+sqrt=number**0.5
+print("Squre Root Of The Number Is:",sqrt)
