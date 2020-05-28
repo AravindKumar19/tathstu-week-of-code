@@ -1,0 +1,36 @@
+number=int(input("Enter the number "))
+#check for even or odd
+if number%2==0:
+    print("Number is even")
+else:
+    print("Number is odd")    
+#check for prime
+if number>1:
+    for i in range(2,number) :   
+        if number%i==0:
+            print("Number is not, prime number")
+            break
+else :
+    print("Number is prime")   
+#check for palindrome
+temp=number 
+rev=0 
+while number>0:
+    lastdigit=number%10
+    rev=rev*10+lastdigit
+    number=number//10
+if temp==rev :
+    print("Number is palindrome")
+else:
+    print("Number is not palindrome")      
+#check for armstrong
+sum=0
+temp=number
+while temp>0 :
+   digit=temp%10
+   sum=sum+digit**3
+   temp=temp//10
+if (number==sum) :
+    print("Number is  armstrong")
+else: 
+    print("Number is   not armstrong")      
